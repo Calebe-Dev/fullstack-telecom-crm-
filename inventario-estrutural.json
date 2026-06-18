@@ -1,0 +1,235 @@
+{
+  "gerado_em": "2026-06-17T21:16:00-03:00",
+  "projeto": "OcHub Static Web Microservice",
+  "modulos": [
+    {
+      "nome": "core",
+      "caminho": "src/app/core/",
+      "descricao_publica": "Infraestrutura transversal Angular: guards de rota, interceptors HTTP, layout principal, logging estruturado, serviços de estado global e preloading strategy customizado."
+    },
+    {
+      "nome": "crm",
+      "caminho": "src/app/features/crm/",
+      "descricao_publica": "Módulo de CRM para gestão de pipeline de vendas, leads, negociações e histórico de interações com clientes empresariais."
+    },
+    {
+      "nome": "orders",
+      "caminho": "src/app/features/orders/",
+      "descricao_publica": "Gestão de pedidos comerciais com ciclo de vida completo: criação, aprovação, faturamento e conclusão."
+    },
+    {
+      "nome": "os",
+      "caminho": "src/app/features/os/",
+      "descricao_publica": "Módulo de Ordens de Serviço técnicas com rastreamento de status, designação de técnico e histórico de atendimento."
+    },
+    {
+      "nome": "marketing",
+      "caminho": "src/app/features/marketing/",
+      "descricao_publica": "Automação de marketing: agendamento, geração de conteúdo com IA e publicação em múltiplos sites WordPress."
+    },
+    {
+      "nome": "ai-agents",
+      "caminho": "src/app/features/ai-agents/",
+      "descricao_publica": "Interface de controle para agentes de IA editoriais, monitoramento de filas e visualização de conteúdo gerado."
+    },
+    {
+      "nome": "integrations",
+      "caminho": "src/app/features/integrations/",
+      "descricao_publica": "Hub de integrações externas com foco em Google Workspace (OAuth, Calendar, Drive, Sheets)."
+    },
+    {
+      "nome": "companies",
+      "caminho": "src/app/features/companies/",
+      "descricao_publica": "Cadastro e gestão de empresas clientes com dados comerciais e vínculos com contatos e pedidos."
+    },
+    {
+      "nome": "contacts",
+      "caminho": "src/app/features/contacts/",
+      "descricao_publica": "Gestão de contatos humanos vinculados a empresas clientes."
+    },
+    {
+      "nome": "lines",
+      "caminho": "src/app/features/lines/",
+      "descricao_publica": "Gerenciamento de linhas de telecomunicações associadas a clientes e pedidos."
+    },
+    {
+      "nome": "offers",
+      "caminho": "src/app/features/offers/",
+      "descricao_publica": "Catálogo de ofertas comerciais por operadora (planos, pacotes, condições)."
+    },
+    {
+      "nome": "operators",
+      "caminho": "src/app/features/operators/",
+      "descricao_publica": "Cadastro de operadoras de telecomunicações parceiras e seus produtos."
+    },
+    {
+      "nome": "partners",
+      "caminho": "src/app/features/partners/",
+      "descricao_publica": "Gestão de parceiros de negócio e suas configurações comerciais."
+    },
+    {
+      "nome": "consultants",
+      "caminho": "src/app/features/consultants/",
+      "descricao_publica": "Cadastro de consultores de vendas com perfil, especialidade e filial."
+    },
+    {
+      "nome": "branches",
+      "caminho": "src/app/features/branches/",
+      "descricao_publica": "Gerenciamento de filiais do grupo com suas configurações regionais."
+    },
+    {
+      "nome": "users",
+      "caminho": "src/app/features/users/",
+      "descricao_publica": "Administração de usuários do sistema com roles e permissões."
+    },
+    {
+      "nome": "reports",
+      "caminho": "src/app/features/reports/",
+      "descricao_publica": "Dashboards e relatórios operacionais consolidados."
+    },
+    {
+      "nome": "system-health",
+      "caminho": "src/app/features/system-health/",
+      "descricao_publica": "Monitoramento em tempo real de serviços, logs estruturados e métricas de performance."
+    },
+    {
+      "nome": "server-manager",
+      "caminho": "src/app/features/server-manager/ + services/server-manager/",
+      "descricao_publica": "Painel de gerenciamento de infraestrutura de servidor via interface web."
+    },
+    {
+      "nome": "support",
+      "caminho": "src/app/features/support/",
+      "descricao_publica": "Módulo de suporte técnico com configurações de atendimento."
+    },
+    {
+      "nome": "workflows",
+      "caminho": "src/app/features/workflows/",
+      "descricao_publica": "Configuração e execução de workflows operacionais automatizados."
+    },
+    {
+      "nome": "documents",
+      "caminho": "src/app/features/documents/",
+      "descricao_publica": "Gestão de documentos vinculados a clientes e processos."
+    },
+    {
+      "nome": "contracts",
+      "caminho": "src/app/features/contracts/",
+      "descricao_publica": "Gestão de contratos comerciais com clientes e parceiros."
+    },
+    {
+      "nome": "history",
+      "caminho": "src/app/features/history/",
+      "descricao_publica": "Histórico de negociações e interações comerciais."
+    },
+    {
+      "nome": "knowledge",
+      "caminho": "src/app/features/knowledge/",
+      "descricao_publica": "Base de conhecimento interna para consulta de equipe."
+    },
+    {
+      "nome": "ia_righter",
+      "caminho": "ia_righter/",
+      "descricao_publica": "Sub-aplicação Node.js independente para geração editorial automatizada com IA. Inclui scrapers, skills de prompts, workflows e sistema de configuração por site."
+    },
+    {
+      "nome": "ochub-sdk",
+      "caminho": "sdk/ochub-sdk/",
+      "descricao_publica": "Biblioteca TypeScript (@grupooc/ochub-sdk v1.1.0) para integração de sistemas externos ao OcHub. Encapsula operações de CRM, CMS, SSG e static."
+    },
+    {
+      "nome": "api-server",
+      "caminho": "api-server.js",
+      "descricao_publica": "API Express 5 companion da aplicação Angular SSR. Gerencia cron jobs, proxy de APIs externas, auditoria de sites, logs e health check centralizado."
+    },
+    {
+      "nome": "wordpress-plugin",
+      "caminho": "wordpress-plugin/oc-hub-connector/",
+      "descricao_publica": "Plugin PHP para WordPress que conecta sites clientes ao CRM via ochub-sdk."
+    },
+    {
+      "nome": "scripts-migration",
+      "caminho": "scripts/migration/",
+      "descricao_publica": "Suite de scripts de migração de dados com fases: snapshot, purge dry-run, staging, import e validação."
+    },
+    {
+      "nome": "rag-system",
+      "caminho": "scripts/rag/",
+      "descricao_publica": "Sistema de indexação semântica local do codebase via embeddings para consulta contextual por agentes de IA."
+    }
+  ],
+  "secoes": [
+    { "nome": "guards", "modulo_pai": "core", "responsabilidade": "Proteção de rotas com verificação de autenticação" },
+    { "nome": "interceptors", "modulo_pai": "core", "responsabilidade": "Tratamento global de erros HTTP e injeção de headers" },
+    { "nome": "layout", "modulo_pai": "core", "responsabilidade": "Shell da aplicação: sidebar, navbar e roteamento principal" },
+    { "nome": "services/google-auth", "modulo_pai": "core", "responsabilidade": "Gestão de autenticação OAuth 2.0 com Google" },
+    { "nome": "services/permissions", "modulo_pai": "core", "responsabilidade": "RBAC — controle de acesso por role de usuário" },
+    { "nome": "services/logger", "modulo_pai": "core", "responsabilidade": "Logging estruturado com persistência" },
+    { "nome": "pipeline", "modulo_pai": "crm", "responsabilidade": "Funil de vendas e progressão de leads" },
+    { "nome": "pages/dashboard", "modulo_pai": "marketing", "responsabilidade": "Visão geral de sites e status de publicação" },
+    { "nome": "pages/schedule", "modulo_pai": "marketing", "responsabilidade": "Agendamento de conteúdo por site e período" },
+    { "nome": "pages/audit", "modulo_pai": "marketing", "responsabilidade": "Auditoria SEO de sites com histórico" },
+    { "nome": "src/core", "modulo_pai": "ia_righter", "responsabilidade": "Motor de geração de conteúdo com LLM" },
+    { "nome": "src/scrapers", "modulo_pai": "ia_righter", "responsabilidade": "Coleta de referências e dados de contexto" },
+    { "nome": "src/skills", "modulo_pai": "ia_righter", "responsabilidade": "Prompts e habilidades especializadas por tipo de conteúdo" },
+    { "nome": "src/workflows", "modulo_pai": "ia_righter", "responsabilidade": "Orquestração de pipelines editoriais completos" },
+    { "nome": "src/crm", "modulo_pai": "ochub-sdk", "responsabilidade": "Cliente tipado para operações de CRM via Backend API" },
+    { "nome": "src/cms", "modulo_pai": "ochub-sdk", "responsabilidade": "Cliente tipado para operações de CMS" },
+    { "nome": "src/ssg", "modulo_pai": "ochub-sdk", "responsabilidade": "Geração de sites estáticos via SDK" }
+  ],
+  "entidades": [
+    {
+      "nome": "Empresa",
+      "tipo": "model",
+      "atributos_publicos": ["razao_social", "nome_fantasia", "segmento", "cidade", "estado", "status"],
+      "atributos_omitidos": ["[OMITIDO] cnpj", "[OMITIDO] dados_cobranca", "[OMITIDO] endereco_completo"]
+    },
+    {
+      "nome": "Contato",
+      "tipo": "model",
+      "atributos_publicos": ["nome", "cargo", "email", "empresa_id"],
+      "atributos_omitidos": ["[OMITIDO] cpf", "[OMITIDO] telefone_pessoal"]
+    },
+    {
+      "nome": "OrdemServico",
+      "tipo": "model",
+      "atributos_publicos": ["numero_os", "tipo", "status", "data_abertura", "data_prevista", "data_conclusao"],
+      "atributos_omitidos": ["[OMITIDO] endereco_instalacao", "[OMITIDO] dados_linha_telefonica"]
+    },
+    {
+      "nome": "PostMarketing",
+      "tipo": "model",
+      "atributos_publicos": ["titulo", "status", "data_publicacao", "site_id", "score_qualidade"],
+      "atributos_omitidos": ["[OMITIDO] prompt_utilizado", "[OMITIDO] parametros_modelo_ia"]
+    },
+    {
+      "nome": "AgentRun",
+      "tipo": "model",
+      "atributos_publicos": ["nome_agente", "status", "inicio", "fim"],
+      "atributos_omitidos": ["[OMITIDO] logs_internos_com_dados_sensiveis"]
+    },
+    {
+      "nome": "OcHubClient",
+      "tipo": "component",
+      "atributos_publicos": ["baseUrl", "connect()", "disconnect()", "crm", "cms", "static", "ssg"],
+      "atributos_omitidos": ["[OMITIDO] token_interno"]
+    }
+  ],
+  "dependencias_externas": [
+    { "nome": "Angular 20", "categoria": "ui" },
+    { "nome": "@angular/ssr", "categoria": "infra" },
+    { "nome": "Express 5", "categoria": "api" },
+    { "nome": "Backend API (Headless CMS)", "categoria": "db" },
+    { "nome": "googleapis v170", "categoria": "api" },
+    { "nome": "Freepik API", "categoria": "api" },
+    { "nome": "Google OAuth 2.0", "categoria": "auth" },
+    { "nome": "Docker + Docker Compose", "categoria": "infra" },
+    { "nome": "node-cron", "categoria": "infra" },
+    { "nome": "TailwindCSS 3", "categoria": "ui" },
+    { "nome": "@xenova/transformers", "categoria": "api" },
+    { "nome": "tsup (build SDK)", "categoria": "infra" },
+    { "nome": "Vitest (testes SDK)", "categoria": "infra" },
+    { "nome": "Karma + Jasmine (testes Angular)", "categoria": "infra" },
+    { "nome": "WordPress (via plugin PHP)", "categoria": "api" }
+  ]
+}
