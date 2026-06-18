@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OcHub | Enterprise Operations Platform</title>
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="OcHub | Enterprise Operations Platform">
+    <meta property="og:description" content="Plataforma de gestão full-stack para distribuidoras de telecomunicações. CRM, Ordens de Serviço e Inteligência Artificial integrados.">
+    <meta property="og:image" content="https://calebe-dev.github.io/fullstack-telecom-crm-/assets/social-preview.png">
+    <meta property="og:url" content="https://calebe-dev.github.io/fullstack-telecom-crm-/">
+    <meta property="og:type" content="website">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="OcHub | Enterprise Operations Platform">
+    <meta name="twitter:description" content="Gestão full-stack para telecom. CRM, Ordens de Serviço e IA.">
+    <meta name="twitter:image" content="https://calebe-dev.github.io/fullstack-telecom-crm-/assets/social-preview.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg-color: #0b0f19;
+            --text-color: #e2e8f0;
+            --primary: #00f2fe;
+            --secondary: #4facfe;
+            --glass-bg: rgba(255, 255, 255, 0.05);
+            --glass-border: rgba(255, 255, 255, 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            overflow-x: hidden;
+            background-image: radial-gradient(circle at 15% 50%, rgba(79, 172, 254, 0.15), transparent 25%),
+                              radial-gradient(circle at 85% 30%, rgba(0, 242, 254, 0.15), transparent 25%);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Glassmorphism utility */
+        .glass {
+            background: var(--glass-bg);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid var(--glass-border);
+            border-radius: 16px;
+        }
+
+        /* Header */
+        header {
+            padding: 2rem 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            letter-spacing: -1px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary {
+            background: linear-gradient(90deg, var(--secondary), var(--primary));
+            color: #000;
+            box-shadow: 0 4px 15px rgba(0, 242, 254, 0.3);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 242, 254, 0.5);
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 6rem 0;
+            text-align: center;
+            position: relative;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            line-height: 1.1;
+            letter-spacing: -2px;
+        }
+
+        .hero h1 span {
+            background: linear-gradient(90deg, #fff, var(--primary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            color: #94a3b8;
+            max-width: 700px;
+            margin: 0 auto 3rem auto;
+        }
+
+        .hero-img {
+            margin-top: 4rem;
+            width: 100%;
+            max-width: 900px;
+            border-radius: 20px;
+            border: 1px solid var(--glass-border);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+        }
+
+        /* Features Section */
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            font-weight: 800;
+        }
+
+        .features {
+            padding: 6rem 0;
+            position: relative;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .feature-card {
+            padding: 2.5rem;
+            transition: transform 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(0, 242, 254, 0.3);
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .feature-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #fff;
+        }
+
+        .feature-card p {
+            color: #94a3b8;
+        }
+
+        /* Use Cases Section */
+        .use-cases {
+            padding: 6rem 0;
+            background: linear-gradient(180deg, transparent, rgba(79, 172, 254, 0.05));
+        }
+
+        .uc-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .uc-item {
+            padding: 1.5rem 2rem;
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        .uc-number {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--primary);
+            opacity: 0.8;
+        }
+
+        .uc-content h4 {
+            font-size: 1.2rem;
+            color: #fff;
+            margin-bottom: 0.5rem;
+        }
+
+        .uc-content p {
+            color: #94a3b8;
+            font-size: 0.95rem;
+        }
+
+        /* Footer */
+        footer {
+            padding: 3rem 0;
+            text-align: center;
+            border-top: 1px solid var(--glass-border);
+            margin-top: 4rem;
+            color: #64748b;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5rem; }
+            .hero p { font-size: 1rem; }
+            .uc-item { flex-direction: column; align-items: flex-start; gap: 1rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <div class="logo">OcHub</div>
+            <a href="https://github.com/Calebe-Dev/fullstack-telecom-crm-" class="btn btn-primary" target="_blank">Ver no GitHub</a>
+        </header>
+
+        <section class="hero">
+            <h1>Orquestrando o <span>Futuro das Telecomunicações</span></h1>
+            <p>Plataforma full-stack construída com Angular SSR e Node.js. Centralize seu CRM, suporte técnico e automatize o marketing com Inteligência Artificial em uma experiência única e escalável.</p>
+            <a href="#features" class="btn btn-primary">Conhecer a Plataforma</a>
+            
+            <img src="assets/social-preview.png" alt="OcHub Dashboard Preview" class="hero-img">
+        </section>
+
+        <section id="features" class="features">
+            <h2 class="section-title">Arquitetura & Módulos</h2>
+            <div class="features-grid">
+                <div class="feature-card glass">
+                    <div class="feature-icon">💼</div>
+                    <h3>CRM Completo</h3>
+                    <p>Gestão 360º de leads, empresas, contratos e o ciclo completo do funil de vendas. Visão total sobre o relacionamento corporativo.</p>
+                </div>
+                <div class="feature-card glass">
+                    <div class="feature-icon">🛠️</div>
+                    <h3>Ordens de Serviço</h3>
+                    <p>Controle de tarefas em campo, rastreamento de status em tempo real e relatórios de execução técnica.</p>
+                </div>
+                <div class="feature-card glass">
+                    <div class="feature-icon">🤖</div>
+                    <h3>Agentes de IA</h3>
+                    <p>Trabalhadores autônomos em containers docker que geram, enriquecem e publicam conteúdo editorial automaticamente via RAG local.</p>
+                </div>
+                <div class="feature-card glass">
+                    <div class="feature-icon">🚀</div>
+                    <h3>Performance Angular SSR</h3>
+                    <p>Renderização no servidor garantindo carregamento ultrarrápido para painéis complexos e dashboards gerenciais pesados.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="use-cases">
+            <div class="container">
+                <h2 class="section-title">Casos de Uso Principais</h2>
+                
+                <div class="uc-list">
+                    <div class="uc-item glass">
+                        <div class="uc-number">01</div>
+                        <div class="uc-content">
+                            <h4>Integração Nativa de Leads</h4>
+                            <p>Sites WordPress de distribuidoras parceiras capturam leads que são sincronizados em tempo real com o funil do CRM via SDK próprio.</p>
+                        </div>
+                    </div>
+
+                    <div class="uc-item glass">
+                        <div class="uc-number">02</div>
+                        <div class="uc-content">
+                            <h4>Automação Editorial com IA</h4>
+                            <p>O sistema consulta tópicos de SEO, gera artigos usando LLMs combinados com dados da empresa, busca imagens e agenda postagens sem intervenção humana.</p>
+                        </div>
+                    </div>
+
+                    <div class="uc-item glass">
+                        <div class="uc-number">03</div>
+                        <div class="uc-content">
+                            <h4>Mobilidade para Técnicos</h4>
+                            <p>Técnicos de campo recebem ordens de serviço (OS) em seus dispositivos, atualizam o status no local e o módulo de backend notifica o cliente instantaneamente.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="uc-item glass">
+                        <div class="uc-number">04</div>
+                        <div class="uc-content">
+                            <h4>Monitoramento de Saúde da Frota Cloud</h4>
+                            <p>Um dashboard central acusa a saúde da API backend, quotas do Google Workspace OAuth, e uso de memória dos contêineres Docker em produção.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>OcHub Enterprise Platform — Portfolio Showcase | Developed by Calebe-Dev</p>
+        </footer>
+    </div>
+
+</body>
+</html>
